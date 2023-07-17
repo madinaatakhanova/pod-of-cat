@@ -1,0 +1,606 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  background-color: #F7EDE8;
+}
+
+header {
+  width: 100%;
+  margin: 0 auto;
+}
+header nav {
+  max-width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+header nav .nav-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+header nav .nav-list li a {
+  color: #000;
+  font-size: 20px;
+  font-weight: 900;
+}
+header nav .nav-list select {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: 600;
+  background-color: transparent;
+}
+header nav .nav-btns {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+header nav .nav-btns .nav-btn {
+  padding: 10px 20px;
+  background-color: #000;
+  color: #fff;
+  transition: all 0.5s ease;
+  border-radius: 8px;
+}
+header nav .nav-btns .nav-btn:hover {
+  background-color: transparent;
+  color: #000;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+.container .wrapper {
+  position: relative;
+  padding-top: 100px;
+}
+.container .wrapper .hero-img1 {
+  position: absolute;
+  top: 20%;
+  left: 0;
+}
+.container .wrapper .hero-img2 {
+  position: absolute;
+  top: 40%;
+  right: 0;
+}
+.container .wrapper .hero-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+.container .wrapper .hero-title h1 {
+  font-size: 80px;
+  width: 400px;
+}
+.container .wrapper .hero-title h1 strong {
+  color: #CD4631;
+}
+.container .wrapper .hero-title p {
+  color: var(--davys-grey, #4D4D4D);
+  text-align: center;
+  font-family: Montserrat Alternates;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 160%;
+  width: 270px;
+}
+.container .wrapper .hero-title .hero-btn {
+  padding: 24px 48px;
+  margin-top: 50px;
+  background-color: #000;
+  color: #fff;
+  border-radius: 8px;
+  background: var(--black, #000);
+  box-shadow: 6px 6px 0px 0px rgba(0, 0, 0, 0.25);
+  transition: all 0.6s ease;
+}
+.container .wrapper .hero-title .hero-btn:hover {
+  background-color: transparent;
+  color: #000;
+}
+.container .wrapper .carousel-div {
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 20px;
+}
+.container .wrapper .links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 100px;
+  padding: 50px 0 100px;
+}
+.container .wrapper .links hr {
+  width: 1160px;
+  margin: 50px;
+}
+.container .wrapper .links .link {
+  display: flex;
+  align-items: center;
+  gap: 120px;
+}
+.container .wrapper .links .link h4 {
+  font-size: 30px;
+}
+.container .wrapper .scribble {
+  position: absolute;
+  bottom: -8%;
+  left: 50%;
+}
+
+#section-3 {
+  background-color: #fff;
+  padding-top: 150px;
+  padding-bottom: 100px;
+}
+#section-3 .idea h2 {
+  font-weight: 700;
+  font-size: 72px;
+  text-align: center;
+  width: 1000px;
+  margin: 0 auto;
+}
+#section-3 .idea .lesing {
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-around;
+  align-items: end;
+}
+#section-3 .idea .lesing .idea-lessing {
+  width: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#section-3 .idea .lesing .idea-lessing p {
+  margin-top: 40px;
+  width: 400px;
+  text-align: center;
+}
+#section-3 .idea .panel {
+  width: 1160px;
+  margin: 0 auto;
+  position: relative;
+  height: 400px;
+  background-color: #F7EDE8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 150px;
+}
+#section-3 .idea .panel .positon-panel-img-1 {
+  position: absolute;
+  left: -5%;
+  bottom: 10%;
+}
+#section-3 .idea .panel .positon-panel-img-2 {
+  position: absolute;
+  top: -10%;
+  right: -5%;
+}
+#section-3 .idea .panel h3 {
+  font-size: 40px;
+  width: 700px;
+  text-align: center;
+  margin: 20px 0 0 0;
+  margin-bottom: 100px;
+}
+#section-3 .idea .panel .info-panel {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 10px;
+}
+#section-3 .idea .panel .info-panel span {
+  display: flex;
+  justify-content: center;
+  align-items: end;
+}
+
+#section-4 {
+  width: 100%;
+  background-color: #EDF3F7;
+  padding: 100px;
+  position: relative;
+}
+#section-4 .scribble {
+  position: absolute;
+  top: -30%;
+  left: 50%;
+}
+#section-4 .title-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+}
+#section-4 .title-page .title-img {
+  position: absolute;
+  top: -30%;
+  left: 29%;
+}
+#section-4 .title-page h2 {
+  font-size: 52px;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+#section-4 .title-page p {
+  font-size: 20px;
+  margin-bottom: 50px;
+}
+#section-4 .cards {
+  display: flex;
+  justify-content: start;
+  overflow-x: scroll;
+  align-items: center;
+  gap: 20px;
+}
+#section-4 .cards::-webkit-scrollbar {
+  cursor: pointer;
+  display: none;
+}
+#section-4 .cards .card {
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  flex-direction: column;
+  background-color: #fff;
+  padding: 20px;
+  width: 570px;
+}
+#section-4 .cards .card img {
+  margin-left: 20px;
+  margin: 20px;
+}
+#section-4 .cards .card p {
+  margin-left: 20px;
+  width: 250px;
+}
+#section-4 .cards .card .card-span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#section-4 .cards .card .card-span span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  margin-top: 50px;
+}
+#section-4 .cards .card .card-span span img {
+  border-radius: 50%;
+  margin: 0;
+}
+#section-4 .cards .card .card-span span p {
+  margin: 0;
+}
+#section-4 .page-btn {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 10px;
+  margin-top: 50px;
+}
+#section-4 .page-btn button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+#section-5 {
+  width: 100%;
+  background-color: #fff;
+}
+#section-5 .shipping {
+  padding-top: 100px;
+  position: relative;
+  padding-bottom: 100px;
+}
+#section-5 .shipping .scribble {
+  position: absolute;
+  top: -8%;
+  left: 50%;
+}
+#section-5 .shipping h2 {
+  text-align: center;
+  font-size: 52px;
+  font-weight: 800;
+  padding-top: 50px;
+}
+#section-5 .shipping .positon-h2-img {
+  position: absolute;
+  top: -2%;
+  left: 55%;
+}
+#section-5 .shipping .text {
+  margin-top: 20px;
+  font-family: Montserrat Alternates;
+  font-size: 22.65px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 160%;
+  text-align: center;
+}
+#section-5 .shipping .list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 50px;
+  gap: 50px;
+}
+#section-5 .shipping .list .card-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#section-5 .shipping .list .card-list h4 {
+  color: var(--black, #000);
+  text-align: center;
+  font-family: Montserrat Alternates;
+  font-size: 22.65px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 140%; /* 31.71px */
+  letter-spacing: -0.453px;
+  margin: 20px 0;
+}
+#section-5 .shipping .list .card-list p {
+  color: var(--black, #000);
+  text-align: center;
+  font-family: Montserrat Alternates;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 160%;
+  width: 400px;
+}
+#section-5 .shipping .shipping-btn {
+  margin-top: 50px;
+  margin-left: 650px;
+  padding: 10px 20px;
+  background-color: #000;
+  color: #fff;
+  transition: all 0.5s ease;
+  border-radius: 8px;
+}
+#section-5 .shipping .shipping-btn:hover {
+  background-color: transparent;
+  color: #000;
+}
+
+.eppizod {
+  padding: 150px 0;
+  position: relative;
+}
+.eppizod .scribble {
+  position: absolute;
+  top: -4%;
+  left: 50%;
+}
+.eppizod h2 {
+  text-align: center;
+  color: var(--black, #000);
+  font-family: Montserrat Alternates;
+  font-size: 59.3px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%; /* 71.16px */
+  letter-spacing: -1.186px;
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+.eppizod p {
+  text-align: center;
+  color: var(--davys-grey, #4D4D4D);
+  font-family: Montserrat Alternates;
+  font-size: 22.65px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 160%; /* 36.24px */
+}
+.eppizod .card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.eppizod .cardding {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  background-color: #fff;
+  width: 600px;
+  padding: 20px;
+  margin-top: 100px;
+  border-radius: 12px;
+  border: 1px solid #000;
+}
+.eppizod .cardding .cardding-hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+.eppizod .cardding .cardding-hero strong {
+  color: #CD4631;
+  font-size: 19px;
+}
+.eppizod .cardding .cardding-hero h5 {
+  color: #CD4631;
+  font-size: 20px;
+  margin-top: 10px;
+}
+.eppizod .cardding .cardding-hero hr {
+  width: 352px;
+  margin: 10px 0;
+}
+.eppizod .cardding .cardding-hero p {
+  text-align: start;
+  width: 452px;
+}
+.eppizod .cardding .cardding-contact {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+.eppizod .cardding .cardding-contact .cardding-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.eppizod .cardding .cardding-contact .cardding-btn button {
+  padding: 8px;
+  border-radius: 5px;
+  background-color: transparent;
+}
+.eppizod .cardding .cardding-contact .cardding-comment {
+  margin-right: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.eppizod .cardding .cardding-contact .cardding-comment img {
+  border-radius: 50%;
+}
+.eppizod .cardding:nth-child(1),
+.eppizod .cardding:nth-child(4),
+.eppizod .cardding:nth-child(5) {
+  box-shadow: 10px 10px 0px 0px #81ADC8;
+}
+.eppizod .episodes-btn {
+  padding: 12px 20px;
+  background-color: #000;
+  color: #fff;
+  transition: all 0.5s ease;
+  border-radius: 8px;
+  margin-top: 100px;
+  margin-left: 620px;
+}
+.eppizod .episodes-btn:hover {
+  background-color: transparent;
+  color: #000;
+}
+
+#section-6 {
+  padding: 200px 0;
+  background-color: #fff;
+}
+#section-6 .become {
+  position: relative;
+}
+#section-6 .become .scribble {
+  position: absolute;
+  top: -28%;
+  left: 50%;
+}
+#section-6 .become h2 {
+  text-align: center;
+  font-size: 55px;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+#section-6 .become p {
+  text-align: center;
+  font-size: 20px;
+}
+#section-6 .become .cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-top: 50px;
+}
+#section-6 .become .cards .card {
+  border: 1px solid #000;
+  border-radius: 12px;
+  background-color: #fff;
+  padding: 40px 20px 20px 20px;
+  width: 373px;
+  transition: all 0.5s ease;
+}
+#section-6 .become .cards .card:hover {
+  border: 1.5px solid var(--vermillion, #CD4631);
+  background: var(--champagne, #F7EDE8);
+}
+#section-6 .become .cards .card h3 {
+  color: var(--black, #000);
+  font-family: Montserrat Alternates;
+  font-size: 36.65px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 140%; /* 51.31px */
+  letter-spacing: -0.733px;
+}
+#section-6 .become .cards .card p {
+  color: var(--davys-grey, #4D4D4D);
+  font-family: Montserrat Alternates;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 160%; /* 22.4px */
+  text-align: start;
+  margin: 20px 0 50px 0;
+}
+#section-6 .become .cards .card .prise {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#section-6 .become .cards .card .prise button {
+  background-color: #000;
+  color: #fff;
+  border-radius: 12px;
+  padding: 20px 36px;
+  transition: all 0.5s ease;
+}
+#section-6 .become .cards .card .prise button:hover {
+  background-color: transparent;
+  color: #000;
+}
+#section-6 .become .cards .card .prise span {
+  display: block;
+  margin-top: 50px;
+  padding: 0;
+}
+#section-6 .become .cards .card .prise span p {
+  font-size: 20px;
+}
+#section-6 .become .cards .card .prise span p strong {
+  color: #000;
+}/*# sourceMappingURL=main.css.map */
